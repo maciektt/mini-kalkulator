@@ -10,16 +10,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: aqua;
+    background: rgb(204,115,25);
+    background: linear-gradient(90deg, rgba(204,115,25,0.9037990196078431) 0%, rgba(255,170,0,1) 51%, rgba(206,172,48,1) 99%);
+    border:  solid black 4px;
     border-radius: 15px ;
     height: 12%;
     width: 27%;
+    font-family: cursive;
+    font-size: 26px;
 }
 .number{
-    width: 24%;
+    width: 120px;
     border-radius: 15px;
-    height: 40px;
-    
+    height: 60px;
+    font-size: 30px;
+    border: solid 4px black;
+    background-color: darkgray;
+    font-family: cursive;
+    padding: 1rem;
 }
 .inputs{
     display: flex;
@@ -27,6 +35,7 @@
     justify-content: center;
     padding: 1rem;
     gap: 10px;
+    
 }
 .znaki{
     display: flex;
@@ -34,15 +43,20 @@
     justify-content: center;
     gap: 40px;
     padding: 1rem;
+    
 }
 .znak{
     border: solid 2px black;
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
+    background-color: darkgray;
+    font-family: cursive;
+    font-size: 35px;
+    border: solid 3px black;
 }
 .oblicz{
     background-color: aqua;
@@ -52,5 +66,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: cursive;
+    font-size: 26px;
+    background: rgb(204,115,25);
+    background: linear-gradient(90deg, rgba(204,115,25,0.9037990196078431) 0%, rgba(255,170,0,1) 51%, rgba(206,172,48,1) 99%);
+    border:  solid black 4px;
     
+}
+.active-btn{
+    background-color: orange;
+    color: blue;
+}
+body{
+    background: rgb(8,23,125);
+    background: linear-gradient(90deg, rgba(8,23,125,0.9037990196078431) 0%, rgba(8,0,255,1) 51%, rgba(22,8,119,1) 99%);
+}
+.oblicz:hover{
+    color: blue;
+    transform: scale(1.07);
+}
+.znak:hover{
+    color: blue;
+    
+
+
 }
