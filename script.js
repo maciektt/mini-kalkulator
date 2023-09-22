@@ -44,7 +44,7 @@ function oblicz(){
         if (znak==='x') return zmienna1*zmienna2
     }
     if (znak==='/'){
-        if (zmienna2===0) 'return NIE MOZNA / 0 !'
+        if (zmienna2===0) return 'NIE MOZNA / 0 !'
         return zmienna1/zmienna2
 
     }
