@@ -27,33 +27,29 @@ function wyswietlNaEkranie(dowyswietlenia){
     screenElem.innerText = dowyswietlenia
 }
 
-function oblicz(){
+function oblicz() {
 
-    zmienna1=Number(input1Elem.value)
-    zmienna2=Number(input2Elem.value)
+    zmienna1 = Number(input1Elem.value)
+    zmienna2 = Number(input2Elem.value)
 
     console.log(zmienna1,zmienna2)
 
-    if ((zmienna1 & zmienna2) || zmienna1===0 || zmienna2===0){
+    if((zmienna1 && zmienna2) || zmienna1===0 || zmienna2===0){
         if (znak==='+') return zmienna1+zmienna2
-    }
-    if ((zmienna1 & zmienna2) || zmienna1===0 || zmienna2===0){
-        if (znak==='-') return zmienna1-zmienna2
-    }
-    if ((zmienna1 & zmienna2) || zmienna1===0 || zmienna2===0){
-        if (znak==='x') return zmienna1*zmienna2
-    }
-    if (znak==='/'){
-        if (zmienna2===0) return 'NIE MOZNA / 0 !'
-        return zmienna1/zmienna2
 
+        if (znak==="-") return zmienna1-zmienna2
+    
+        if (znak==="x") return zmienna1*zmienna2
+    
+        if (znak==="/"){
+            if(zmienna2===0) return 'NIE MOŻNA / 0 !'
+            return zmienna1/zmienna2
+        }
     }
-
     else{
-        return "PODAJ POPRAWNA LICZBE I ZNAK"
+        return 'podaj poprawne liczby i znak'
     }
 }
-
 
 
 
